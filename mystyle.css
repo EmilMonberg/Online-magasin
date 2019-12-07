@@ -1,0 +1,472 @@
+/* -- Reset alt -- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* -- Grid layout -- */
+
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 5em minmax(20em, 1fr) minmax(20em, 1fr) 5em;
+    grid-template-areas: 
+        "pad1 logo logo pad2"
+        "pad1 menu1 menu1 pad2"
+        "pad1 streg streg pad2"
+        "pad1 banner banner pad2"
+        "pad1 artikel1 artikel2 pad2"
+        "footer footer footer footer"
+}
+
+
+
+.sidehoved {
+    grid-area: logo;
+}
+
+.artikel1 {
+    grid-area: artikel1;    
+}
+
+.artikel2 {
+    grid-area: artikel2;
+}
+
+.artikel3 {
+    grid-area: artikel2;
+}
+
+.artikel_venstre {
+    grid-area: artikel1;
+}
+
+.sidefod {
+    grid-area: footer;
+}
+
+.menu_nav {
+    grid-area: menu1;
+}
+
+.pad1 {
+    grid-area: pad1;
+}
+
+.pad2 {
+    grid-area: pad2;
+}
+
+.streg {
+    grid-area: streg;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.artikel_streg {
+    grid-area: artikel1;
+}
+
+
+
+
+/* -- Header logo -- */
+
+.sidehoved {
+    background: url(images/GrandSlamLogo.jpg) no-repeat center;
+    background-size: 30% 100%;
+    text-align: center;
+    height: 7.5em;
+    
+}
+
+.nav_liste {
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav_listeelement{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-family: 'Bungee', cursive;
+}
+
+.nav_link {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    margin: .5em;
+    padding-top: 1em;
+}
+
+a {color:black}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.linkstate a.link:hover {
+    color: #d9211a;
+    text-decoration: none;
+}
+
+.linkstate a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.linkstate a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.hr {
+  border:none;
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+  margin: -50px auto 10px;
+  grid-area: streg;
+}
+
+
+
+/* -- Body styles -- */
+
+
+#bannerlink {
+    display: block;
+    padding-top: 5em;
+    background: url(images/banner1.jpg) no-repeat center;
+    background-size: 105% 100%;
+    height: 14em;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    grid-area: banner;
+}
+
+.artikel1 {
+    padding-top: 6em;
+    padding-right: 3em;
+}
+
+.artikel2 {
+    padding-top: 194px;
+    padding-left: 3.5em;
+}
+.artikel_streg {
+    border: none;
+    height: 2px;
+    width: 216.7%;
+    margin-top: 0;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #a8a0a0;
+    background-color: #a8a0a0;
+    color: gray;
+}
+
+.artikel_section {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.billede {
+    margin-top: 0.2em;
+    width: 100%;
+    border: none;
+    box-shadow: 0 5px 20px -2px #333;
+}
+
+.billede2 {
+    margin-top: 0.2em;
+    width: 100%;
+    height: 40.7%;
+    border: none;
+    box-shadow: 0 5px 20px -2px #333;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.03); }
+
+
+
+.overskrift {
+    padding-top: 1.5em;
+}
+
+.box {
+    background-color: lightgray;
+    margin-top:  0.35em;
+    padding-bottom: 17.8%;
+    width: 100%;
+    border: none;
+    box-shadow: 0 5px 20px -2px #333;
+}
+
+.overskrift_font {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.broedtekst {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    font-size: 16px;
+    
+}
+
+/* -- Kampoversigt -- */
+
+.nyfont {
+    font-family: 'Audiowide', cursive;
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.nyfont_under {
+    font-family: 'Audiowide', cursive;
+    font-size: 1em;
+    text-align: center;
+}
+
+.kampe_font {
+    font-family: 'Bungee', cursive;
+}
+
+.hold {
+    padding-left: 15%
+}
+
+.tid {
+    color: #a31515;
+}
+
+
+/* -- footer -- */
+
+.footerbox {
+    background-color: #002157;
+    margin-top: 3em;
+    padding-bottom: 1em;
+    
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 14px;
+}
+
+
+
+
+
+/* -- NEWS SIDE -- */
+
+
+.banner_gem {
+    display: none;
+}
+
+.artikel_section_gem {
+    display: none;
+}
+
+.artikel_streg_gem {
+    display: none;
+}
+
+.artikel_overskrift {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    
+}
+
+.artikel_suboverskrift {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+.artikel3 {
+    padding-top: 45px;
+    padding-left: 3.5em;
+}
+
+.box2 {
+    background-color: #e1e1e2;
+    height: 30%;
+    width: 100%;
+    border: none;
+    padding-right: 0;
+    padding-top: 0;
+    margin-top: 50px;
+}
+
+.tilbage_knap {
+    padding-top: 1em;
+    font-size: 1.1em;
+    font-family: 'Bungee', cursive;
+    text-align: right;
+}
+
+.broedtekst2 {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+
+
+/* -- HISTORIE SIDE -- */
+
+#banner_historie {
+    display: block;
+    padding-top: 5em;
+    background: url(images/JackieRobinson_banner.jpg) no-repeat center;
+    background-size: 105% 100%;
+    height: 18em;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    grid-area: banner;
+}
+
+.box3 {
+    background-color: #e1e1e2;
+    height: 11%;
+    width: 100%;
+    border: none;
+    padding-right: 0;
+    padding-top: 0;
+    margin-top: 50px;
+}
+
+.artikel_venstre {
+    padding-top: 11em;
+}
+
+.artikel_overskrift_historie {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+/* RWD - Responsive webdesign */
+
+@media only screen and (min-width: 600px) {
+    .boks {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "logo"
+            "menu1"
+            "artikel1"
+            "artikel2"
+            "footer"
+    }
+    
+    .sidehoved {
+    background: url(images/GrandSlamLogo.jpg) no-repeat center;
+    background-size: 60% 100%;
+    text-align: center;
+    height: 7.5em;
+    }
+
+    .banner {
+        display: none;
+    }
+    
+    .nav_liste {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 3.5em;
+    }
+    
+    .artikel_streg {
+    border: none;
+    height: 2px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 3em;
+    border-bottom: 1px solid #a8a0a0;
+    background-color: #a8a0a0;
+    color: gray;
+}
+    .artikel_section {
+        padding-top: 3em;
+        font-size: 27px;
+        text-align: center;
+    }
+    
+    .artikel_overskrift {
+        font-size: 1.5em;
+        padding-left: 10px;
+    }
+    
+    
+    .artikel1 {
+        padding-right: 0;
+        padding-top: 0;
+    }
+    
+    .artikel2 {
+        padding-left: 0;
+        padding-top: 2em;
+    }
+    
+    .artikel3 {
+        padding-left: 10px;
+    }
+    
+    .artikel_venstre {
+        padding-left: 10px;
+    }
+    
+    .hold {
+        padding-left: 5%;
+    }
+    
+    .tilbage_knap {
+        text-align: center;
+    }
+    
+    .artikel_overskrift_historie {
+        padding-left: 10px;
+    }
+    
+    .artikel_suboverskrift {
+        padding-left: 10px;
+    }
+
+} /*slut på @media */
+
